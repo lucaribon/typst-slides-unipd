@@ -1,4 +1,4 @@
-#import "@preview/polylux:0.3.1": *
+#import "@preview/polylux:0.4.0": *
 #import "unipd.typ": *
 
 #show: unipd-theme
@@ -6,7 +6,7 @@
   authors: "Luca Ribon",
   title: "Migrazione al protocollo MQTT in un sistema di monitoraggio e tracciamento di linee produzione basato su dispositivi RFID",
   subtitle: "Discussione di Laurea Triennale in Informatica",
-  date: "Aprile 2026",
+  date: "22 Aprile 2026",
   top-gap: 15%,
   title-subtitle-gap: 0.8em,
   meta-gap: 4%,
@@ -17,12 +17,46 @@
 #slide(title: "KanbanBOX")[
 ]
 
+#slide(title: "Scopo del progetto")[
+  #toolbox.side-by-side(
+    [
+      - configurazione da remoto dei reader
+    ],
+    [
+    ]
+  )
+]
+
 // TODO: tenere in considerazione
 // #slide(title: "Dynamic text")[
 //   #lorem(20)
 
 //   #uncover("2-")[This appears after one slide]
 // ]
+
+#new-section-slide("Architettura")
+
+#slide(title: "Sistema esistente")[
+]
+
+#slide(title: "Sistema implementato")[
+  #figure(image("./data_flow_diagram.png"))
+]
+
+#slide(title: "Reader e MQTT")[
+]
+
+#slide(title: "AWS IoT Core")[
+]
+
+#slide(title: "AWS SQS")[
+]
+
+#new-section-slide("Codifica")
+
+#slide(title: "Librerire e framework")[]
+
+
 
 #new-section-slide("Conclusions")
 
