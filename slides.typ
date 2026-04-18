@@ -40,10 +40,17 @@
 ]
 
 #slide(title: "Sistema implementato")[
-  #figure(image("./data_flow_diagram.png"))
+  #figure(image("./img/data_flow_diagram.png"))
 ]
 
 #slide(title: "Reader e MQTT")[
+  #toolbox.side-by-side(
+    [
+    ],
+    [
+      #figure(image("./img/FX9600.jpg", width: 120%))
+    ]
+  )
 ]
 
 #slide(title: "AWS IoT Core")[
