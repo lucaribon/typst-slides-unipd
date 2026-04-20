@@ -4,10 +4,10 @@
     main: rgb(155, 0, 20),
     gray: rgb(72, 79, 89),
     light-gray: rgb(237, 237, 238),
-    header-logo: "logo_text_white.png",
-    title-background: "bg.svg",
-    background-logo: "logo_text.png",
-    footer-wave: "bg_wave.svg",
+    header-logo: "./img/logo_text_white.png",
+    title-background: "./img/bg.svg",
+    background-logo: "./img/logo_text.png",
+    footer-wave: "./img/bg_wave.svg",
 )
 
 #let palette-state = state("unipd-theme-palette", unipd-palette)
@@ -31,7 +31,14 @@
     set text(font: "New Computer Modern Sans", size: 24pt)
     show heading.where(level: 2): set text(fill: palette.main)
     show heading.where(level: 2): it => it + v(1em)
-    set list(marker: text("•", fill: palette.main.darken(20%)))
+    show list: it => {
+        set par(leading: 0.4em)
+        it
+    }
+    set list(
+        marker: text("•", fill: palette.main.darken(20%)),
+        spacing: 1.1em,
+    )
 
     palette-state.update(palette)
     body
@@ -88,7 +95,7 @@
         text(
             size: 18pt,
             fill: palette.main.lighten(50%),
-            logic.logical-slide.display("1 of 1", both: true),
+            logic.logical-slide.display("1/1", both: true),
         ),
     )
 })
