@@ -8,8 +8,8 @@
     subtitle: "Discussione di Laurea Triennale in Informatica",
     date: "22 Aprile 2026",
     top-gap: 15%,
-    title-subtitle-gap: 0.8em,
-    meta-gap: 4%,
+    title-subtitle-gap: 0.6em,
+    meta-gap: 0%,
 )
 
 // ?tenere le new section slide dato che hanno lo stesso titolo che viene riportato su ogni slide della sezione ???
@@ -57,14 +57,14 @@
 //   #uncover("2-")[This appears after one slide]
 // ]
 
-#new-section-slide("Architettura e Implementazione")
+#new-section-slide("Architettura e Progettazione")
 
 #slide(title: "Sistema esistente")[
     #figure(image("img/old_arch_diagram.png", width: 90%))
 ]
 
 #slide(title: "Sistema implementato")[
-    #figure(image("img/data_flow_diagram.png", width: auto))
+    #figure(image("img/data_flow_diagram.png", width: 91%))
 ]
 
 #slide(title: "Reader e MQTT")[

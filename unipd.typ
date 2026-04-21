@@ -125,16 +125,7 @@
 
 #let new-section(title) = utils.register-section(title)
 
-#let new-section-slide(title) = logic.polylux-slide({
-    new-section(title)
-
-    header
-    footer
-
-    set align(center + horizon)
-    let titletext = with-palette(palette => text(palette.main, title))
-    heading(level: 2, titletext)
-})
+#let new-section-slide(title) = new-section(title)
 
 #let filled-slide(content) = logic.polylux-slide(
     with-palette(palette => {
