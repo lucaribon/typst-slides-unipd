@@ -4,7 +4,8 @@
 #show: unipd-theme
 #title-slide(
     authors: "Luca Ribon",
-    title: "Migrazione al protocollo MQTT in un sistema di monitoraggio e tracciamento di linee di produzione basato su dispositivi RFID",
+    title: "Migrazione al protocollo MQTT in un sistema di monitoraggio e tracciamento di linee di produzione basato 
+    su dispositivi RFID",
     subtitle: "Discussione di Laurea Triennale in Informatica",
     date: "22 Aprile 2026",
     top-gap: 15%,
